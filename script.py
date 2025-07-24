@@ -37,10 +37,10 @@ def upload_file_to_hdfs():
         if upload_response.status_code != 201:
             raise Exception(f"Upload failed: {upload_response.text}")
 
-    print("[✅] File successfully uploaded to HDFS at:", HDFS_PATH)
+    print("File successfully uploaded to HDFS at:", HDFS_PATH)
 
 if __name__ == "__main__":
     if not os.path.exists(LOCAL_FILE):
-        print(f"❌ Local file does not exist: {LOCAL_FILE}")
+        print(f""Local file does not exist: {LOCAL_FILE}")
     else:
         upload_file_to_hdfs()
