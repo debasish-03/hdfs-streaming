@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: hdfsdemo
+
+
+server:
+  port: 8080
+
+csv:
+  downloadUrl: "https://data.lacity.org/api/views/2nrs-mtv8/rows.csv?accessType=DOWNLOAD"
+  # "https://data.wa.gov/api/views/f6w7-q2d2/rows.csv?accessType=DOWNLOAD"
+  # "https://data.lacity.org/api/views/2nrs-mtv8/rows.csv?accessType=DOWNLOAD"
+
+hdfs:
+  host: "localhost"
+  port: 9870
+  user: "root"
+  targetPath: "/debasish/data/"
