@@ -9,12 +9,6 @@ import org.springframework.context.annotation.EnableAspectJAutoProxy;
 @EnableAspectJAutoProxy
 public class HdfsdemoApplication implements CommandLineRunner {
 
-	private final HdfsUploaderService uploaderService;
-
-	public HdfsdemoApplication(HdfsUploaderService uploaderService) {
-		this.uploaderService = uploaderService;
-	}
-
 	public static void main(String[] args) {
 		SpringApplication.run(HdfsdemoApplication.class, args);
 	}
@@ -22,6 +16,6 @@ public class HdfsdemoApplication implements CommandLineRunner {
 	@Override
 	public void run(String... args) throws Exception {
 		// uploaderService.downloadAndUploadCsv();
-		uploaderService.downloadAndUploadMultipleCsvs();
+		// uploaderService.downloadAndUploadMultipleCsvs();
 	}
 }

@@ -1,4 +1,4 @@
-package com.hdfsdemo.hdfsdemo;
+package com.hdfsdemo.hdfsdemo.config;
 
 
 import org.springframework.beans.factory.annotation.Value;

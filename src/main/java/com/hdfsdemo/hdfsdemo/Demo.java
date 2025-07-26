@@ -2,6 +2,7 @@ package com.hdfsdemo.hdfsdemo;
 
 
 import com.hdfsdemo.hdfsdemo.aop.TrackExecution;
+import com.hdfsdemo.hdfsdemo.config.WebHdfsConfig;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.retry.annotation.Retryable;
@@ -17,13 +18,13 @@ import java.time.Duration;
 import java.util.List;
 
 @Service
-public class HdfsUploaderService {
+public class Demo {
 
-    private static final Logger logger = LoggerFactory.getLogger(HdfsUploaderService.class);
+    private static final Logger logger = LoggerFactory.getLogger(Demo.class);
     private final WebHdfsConfig config;
     private final HttpClient httpClient;
 
-    public HdfsUploaderService(WebHdfsConfig config) {
+    public Demo(WebHdfsConfig config) {
         this.config = config;
         this.httpClient = HttpClient.newBuilder()
                 .connectTimeout(Duration.ofSeconds(30))
